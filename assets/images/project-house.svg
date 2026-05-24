@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#242424"/><stop offset="1" stop-color="#b9905a"/></linearGradient></defs>
+  <rect width="1200" height="850" fill="url(#g)"/>
+  <rect x="130" y="240" width="800" height="400" rx="14" fill="#eee7dc"/>
+  <path d="M100 270 L530 80 L960 270 Z" fill="#2b2b2b"/>
+  <rect x="220" y="340" width="150" height="190" fill="#111" opacity=".75"/>
+  <rect x="440" y="340" width="150" height="190" fill="#111" opacity=".75"/>
+  <rect x="660" y="340" width="150" height="190" fill="#111" opacity=".75"/>
+  <rect x="220" y="580" width="590" height="18" fill="#b9905a"/>
+  <text x="130" y="735" font-family="Arial" font-size="54" fill="#fff">Featured Residential Project</text>
+  <text x="130" y="790" font-family="Arial" font-size="25" fill="#efe2d0">Interior and exterior painting by JDV Custom Painting</text>
+</svg>
