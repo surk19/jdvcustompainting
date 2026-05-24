@@ -54,7 +54,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 
 .brand-with-logo {
@@ -63,7 +63,7 @@ img {
 }
 
 .header-logo {
-  width: 105px;
+  width: 92px;
   height: auto;
   object-fit: contain;
 }
@@ -96,7 +96,7 @@ img {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.05fr;
   gap: 70px;
   align-items: center;
 }
@@ -124,12 +124,19 @@ img {
   margin-bottom: 34px;
 }
 
+.hero-image-frame {
+  width: 100%;
+  border-radius: 26px;
+  overflow: hidden;
+  background: var(--cream-light);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
+}
+
 .hero-image {
   width: 100%;
-  height: 560px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   border-radius: 26px;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
 }
 
 /* BUTTONS */
@@ -141,6 +148,9 @@ img {
 }
 
 .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 14px 28px;
   border-radius: 999px;
   border: 1px solid var(--border);
@@ -149,6 +159,8 @@ img {
   transition: 0.2s ease;
   background: var(--white);
   cursor: pointer;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .btn:hover {
@@ -254,6 +266,22 @@ img {
   width: 100%;
   border-radius: 24px;
   box-shadow: 0 22px 60px rgba(0, 0, 0, 0.18);
+}
+
+/* FEATURED PROJECT FIX */
+
+.featured-project-section {
+  overflow: hidden;
+}
+
+.featured-project-grid {
+  align-items: center;
+}
+
+.featured-project-button {
+  margin-top: 32px;
+  position: relative;
+  z-index: 2;
 }
 
 /* SERVICES */
@@ -407,6 +435,21 @@ img {
   width: 100%;
 }
 
+/* CTA */
+
+.center {
+  text-align: center;
+}
+
+.center-actions {
+  justify-content: center;
+}
+
+.small {
+  max-width: 700px;
+  margin-inline: auto;
+}
+
 /* FOOTER */
 
 .footer {
@@ -475,7 +518,6 @@ img {
     gap: 18px;
   }
 
-  .hero-image,
   .project-main-image,
   .contact-image {
     height: 420px;
@@ -512,10 +554,9 @@ img {
   }
 
   .header-logo {
-    width: 95px;
+    width: 85px;
   }
 
-  .hero-image,
   .project-main-image,
   .contact-image {
     height: 320px;
