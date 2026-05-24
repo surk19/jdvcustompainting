@@ -9,7 +9,18 @@
 
   <title>Contact | JDV Custom Painting</title>
 
+  <meta name="description"
+    content="Contact JDV Custom Painting for a free interior or exterior painting estimate in the Chicago area." />
+
   <link rel="stylesheet" href="assets/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
 </head>
 
@@ -19,11 +30,12 @@
 
     <div class="wrap nav">
 
-      <a class="brand" href="index.html">
+      <a class="brand brand-with-logo" href="index.html">
 
-        <span class="brand-mark">JDV</span>
-
-        <span>Custom Painting</span>
+        <img
+          src="assets/images/logo.png"
+          alt="JDV Custom Painting logo"
+          class="header-logo" />
 
       </a>
 
@@ -51,15 +63,56 @@
 
     <section class="hero">
 
-      <div class="wrap">
+      <div class="wrap hero-grid">
 
-        <div class="eyebrow">
-          Contact JDV Custom Painting
+        <div>
+
+          <div class="eyebrow">
+            Contact JDV Custom Painting
+          </div>
+
+          <h1 class="h1">
+            Request a free estimate.
+          </h1>
+
+          <p class="lead">
+            Tell us about your project and we’ll get back to you as soon as possible.
+          </p>
+
+          <div style="margin-top:30px;">
+
+            <p class="muted" style="margin-bottom:18px;">
+
+              <strong>Phone:</strong><br />
+
+              <a href="tel:+17734993497">
+                (773) 499-3497
+              </a>
+
+            </p>
+
+            <p class="muted">
+
+              <strong>Email:</strong><br />
+
+              <a href="mailto:info@jdvcustompainting.com">
+                info@jdvcustompainting.com
+              </a>
+
+            </p>
+
+          </div>
+
         </div>
 
-        <h1 class="h1">
-          Request a free estimate for your next painting project.
-        </h1>
+        <div>
+
+          <img
+            class="hero-image"
+            src="assets/images/contact-room.png"
+            alt="Freshly painted modern interior room by JDV Custom Painting" />
+
+        </div>
 
       </div>
 
@@ -67,54 +120,171 @@
 
     <section class="section">
 
-      <div class="wrap split">
+      <div class="wrap">
 
-        <div>
-
-          <h2 class="section-title">
-            Contact Information
-          </h2>
-
-          <p class="muted">
-            Call, text, or email to discuss your project and schedule a free estimate.
-          </p>
-
-          <p>
-
-            <strong>Phone:</strong><br />
-
-            <a href="tel:+17734993497">
-              (773) 499-3497
-            </a>
-
-          </p>
-
-          <p>
-
-            <strong>Email:</strong><br />
-
-            <a href="mailto:info@jdvcustompainting.com">
-              info@jdvcustompainting.com
-            </a>
-
-          </p>
-
+        <div class="kicker">
+          Free Estimate
         </div>
 
-        <div>
+        <h2 class="section-title">
+          Send us your project details.
+        </h2>
 
-          <img
-            class="rounded-image"
-            src="assets/images/contact-room.png"
-            alt="Painting estimate" />
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xwvzqjpv"
+          method="POST">
 
-        </div>
+          <div class="form-row">
+
+            <label for="name">
+              Full Name
+            </label>
+
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your full name"
+              required />
+
+          </div>
+
+          <div class="form-row">
+
+            <label for="phone">
+              Phone Number
+            </label>
+
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="Your phone number"
+              required />
+
+          </div>
+
+          <div class="form-row">
+
+            <label for="email">
+              Email Address
+            </label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Your email address"
+              required />
+
+          </div>
+
+          <div class="form-row">
+
+            <label for="service">
+              Service Needed
+            </label>
+
+            <input
+              id="service"
+              name="service"
+              type="text"
+              placeholder="Interior, exterior, drywall repair, trim, etc." />
+
+          </div>
+
+          <div class="form-row">
+
+            <label for="message">
+              Project Details
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell us about your project, timeline, location, and anything else that may help."
+              required></textarea>
+
+          </div>
+
+          <button class="btn dark" type="submit">
+            Request Free Estimate
+          </button>
+
+        </form>
 
       </div>
 
     </section>
 
   </main>
+
+  <footer class="footer">
+
+    <div class="wrap footer-grid">
+
+      <div>
+
+        <h3>JDV Custom Painting</h3>
+
+        <p>
+          Professional painting services throughout the Chicago area.
+        </p>
+
+      </div>
+
+      <div>
+
+        <h4>Contact</h4>
+
+        <p>
+
+          <a href="tel:+17734993497">
+            (773) 499-3497
+          </a>
+
+          <br />
+
+          <a href="mailto:info@jdvcustompainting.com">
+            info@jdvcustompainting.com
+          </a>
+
+        </p>
+
+      </div>
+
+      <div>
+
+        <h4>Pages</h4>
+
+        <p>
+
+          <a href="index.html">Home</a><br />
+
+          <a href="projects.html">Projects</a><br />
+
+          <a href="about.html">About</a><br />
+
+          <a href="services.html">Services</a><br />
+
+          <a href="faq.html">FAQ</a>
+
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="wrap copyright">
+
+      <p>
+        © 2026 JDV Custom Painting. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
 
 </body>
 
