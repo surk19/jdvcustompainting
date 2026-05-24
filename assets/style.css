@@ -27,14 +27,12 @@ img {
   margin: auto;
 }
 
-/* HEADER */
-
 .topbar {
   position: sticky;
   top: 0;
   z-index: 1000;
   background: rgba(255,255,255,0.96);
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #ececec;
   backdrop-filter: blur(10px);
 }
 
@@ -42,17 +40,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 0;
+  padding: 14px 0;
 }
 
-.brand {
+.brand-with-logo {
   display: flex;
   align-items: center;
 }
 
-.brand-logo {
-  width: 180px;
+.header-logo {
+  width: 200px;
   height: auto;
+  object-fit: contain;
 }
 
 .links {
@@ -71,8 +70,6 @@ img {
 .links a.active {
   color: #c8a96b;
 }
-
-/* HERO */
 
 .hero {
   padding: 100px 0;
@@ -108,11 +105,12 @@ img {
 }
 
 .hero-image {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
   border-radius: 24px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.12);
 }
-
-/* BUTTONS */
 
 .actions {
   display: flex;
@@ -144,8 +142,6 @@ img {
   color: #111111;
   border-color: #c8a96b;
 }
-
-/* SECTIONS */
 
 .section {
   padding: 100px 0;
@@ -180,8 +176,6 @@ img {
   color: #666666;
 }
 
-/* CARDS */
-
 .cards {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -200,8 +194,6 @@ img {
   font-size: 22px;
 }
 
-/* SPLIT */
-
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -210,10 +202,9 @@ img {
 }
 
 .rounded-image {
+  width: 100%;
   border-radius: 24px;
 }
-
-/* SERVICES */
 
 .service-list {
   display: flex;
@@ -231,33 +222,9 @@ img {
   margin-bottom: 12px;
 }
 
-/* CTA */
-
-.center {
-  text-align: center;
-}
-
-.center-actions {
-  justify-content: center;
-}
-
-.small {
-  max-width: 700px;
-  margin-inline: auto;
-}
-
-/* PROJECTS */
-
-.project-image {
-  border-radius: 18px;
-  margin-bottom: 22px;
-}
-
-/* FOOTER */
-
 .footer {
   padding: 70px 0 30px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #ececec;
 }
 
 .footer-grid {
@@ -267,14 +234,13 @@ img {
   margin-bottom: 40px;
 }
 
-.footer h4 {
+.footer h3 {
+  font-size: 24px;
   margin-bottom: 14px;
 }
 
-.footer-logo {
-  width: 240px;
-  height: auto;
-  margin-bottom: 20px;
+.footer h4 {
+  margin-bottom: 14px;
 }
 
 .copyright {
@@ -283,8 +249,6 @@ img {
   color: #777777;
   font-size: 14px;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 900px) {
 
@@ -305,6 +269,10 @@ img {
 
   .links {
     gap: 18px;
+  }
+
+  .hero-image {
+    height: 420px;
   }
 
 }
@@ -331,6 +299,14 @@ img {
 
   .h1 {
     font-size: 34px;
+  }
+
+  .header-logo {
+    width: 170px;
+  }
+
+  .hero-image {
+    height: 320px;
   }
 
 }
