@@ -571,3 +571,11 @@ img {
   }
 
 }
+.image-caption {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
