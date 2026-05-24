@@ -214,7 +214,7 @@ img {
 .section-title {
   font-size: 42px;
   line-height: 1.15;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   font-weight: 900;
   color: var(--black);
 }
@@ -340,26 +340,19 @@ img {
   border-bottom: none;
 }
 
-.project-heading {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 70px;
-  align-items: end;
+.project-heading-clean {
+  max-width: 860px;
   margin-bottom: 45px;
 }
 
-.project-feature {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 36px;
+.project-heading-clean .section-title {
+  max-width: 100%;
+  margin-bottom: 18px;
 }
 
-.project-main-image {
-  width: 100%;
-  height: 580px;
-  object-fit: cover;
-  border-radius: 28px;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.16);
+.project-description {
+  max-width: 760px;
+  font-size: 16px;
 }
 
 .project-gallery {
@@ -377,34 +370,19 @@ img {
   box-shadow: 0 16px 45px rgba(0, 0, 0, 0.10);
 }
 
-.before-after-grid {
+.elgin-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 28px;
+  margin-top: 34px;
 }
 
-.before-after-card {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 26px;
-  padding: 16px;
-  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.08);
-}
-
-.before-after-card img {
+.elgin-gallery img {
   width: 100%;
   height: 360px;
   object-fit: cover;
-  border-radius: 20px;
-}
-
-.image-caption {
-  margin-top: 14px;
-  font-size: 14px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--gold);
+  border-radius: 22px;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.10);
 }
 
 /* CONTACT PAGE */
@@ -570,11 +548,10 @@ img {
   .cards,
   .footer-grid,
   .project-gallery,
+  .elgin-gallery,
   .contact-hero-grid,
   .contact-section-grid,
-  .contact-info-box,
-  .project-heading,
-  .before-after-grid {
+  .contact-info-box {
     grid-template-columns: 1fr;
   }
 
@@ -590,17 +567,13 @@ img {
     gap: 18px;
   }
 
-  .project-main-image,
   .contact-image {
     height: 420px;
   }
 
-  .project-gallery img {
-    height: 360px;
-  }
-
-  .before-after-card img {
-    height: 320px;
+  .project-gallery img,
+  .elgin-gallery img {
+    height: 340px;
   }
 }
 
@@ -632,12 +605,12 @@ img {
     width: 85px;
   }
 
-  .project-main-image,
   .contact-image {
     height: 320px;
   }
 
-  .project-gallery img {
+  .project-gallery img,
+  .elgin-gallery img {
     height: 280px;
   }
 
